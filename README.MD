@@ -13,3 +13,5 @@ Esta aplicación permite a los usuarios jugar al clásico juego de Piedra, Papel
 ```bash
 git clone https://github.com/Gerlin69/Parcial-telematica.git
 cd Parcial-telematica
+
+## -Gerlin La BESTIA PEREA
