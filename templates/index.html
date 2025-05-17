@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piedra, Papel o Tijera</title>
+</head>
+<body>
+    <h1>Juega Piedra, Papel o Tijera</h1>
+    <form method="POST" action="/jugar">
+        <label>Elige tu jugada:</label><br><br>
+        <button type="submit" name="jugada" value="piedra">🪨 Piedra</button>
+        <button type="submit" name="jugada" value="papel">📄 Papel</button>
+        <button type="submit" name="jugada" value="tijera">✂️ Tijera</button>
+    </form>
+
+    {% if resultado %}
+    <hr>
+    <h2>Resultado:</h2>
+    <p><strong>Tú:</strong> {{ jugador }}</p>
+    <p><strong>Servidor:</strong> {{ servidor }}</p>
+    <p><strong>Ganador:</strong> {{ resultado }}</p>
+    {% endif %}
+</body>
+</html>
